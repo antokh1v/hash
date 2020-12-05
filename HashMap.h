@@ -21,7 +21,7 @@ class HashMap {
   using hasher = Hash;
   using key_equal = KeyEqual;
   using allocator_type = Allocator;
-  using buckets = std::vector<value_type, allocator_type()>;
+  using buckets = std::vector<value_type, allocator_type>;
 
   template<typename IterVal>
   struct hm_iterator {
